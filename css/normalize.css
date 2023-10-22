@@ -9,10 +9,8 @@
  */
 
 html {
-  line-height: 1.15;
-  /* 1 */
-  -webkit-text-size-adjust: 100%;
-  /* 2 */
+  line-height: 1.15; /* 1 */
+  -webkit-text-size-adjust: 100%; /* 2 */
 }
 
 /* Sections
@@ -53,12 +51,9 @@ h1 {
  */
 
 hr {
-  box-sizing: content-box;
-  /* 1 */
-  height: 0;
-  /* 1 */
-  overflow: visible;
-  /* 2 */
+  box-sizing: content-box; /* 1 */
+  height: 0; /* 1 */
+  overflow: visible; /* 2 */
 }
 
 /**
@@ -67,10 +62,8 @@ hr {
  */
 
 pre {
-  font-family: monospace, monospace;
-  /* 1 */
-  font-size: 1em;
-  /* 2 */
+  font-family: monospace, monospace; /* 1 */
+  font-size: 1em; /* 2 */
 }
 
 /* Text-level semantics
@@ -90,12 +83,9 @@ a {
  */
 
 abbr[title] {
-  border-bottom: none;
-  /* 1 */
-  text-decoration: underline;
-  /* 2 */
-  text-decoration: underline dotted;
-  /* 2 */
+  border-bottom: none; /* 1 */
+  text-decoration: underline; /* 2 */
+  text-decoration: underline dotted; /* 2 */
 }
 
 /**
@@ -115,10 +105,8 @@ strong {
 code,
 kbd,
 samp {
-  font-family: monospace, monospace;
-  /* 1 */
-  font-size: 1em;
-  /* 2 */
+  font-family: monospace, monospace; /* 1 */
+  font-size: 1em; /* 2 */
 }
 
 /**
@@ -174,14 +162,10 @@ input,
 optgroup,
 select,
 textarea {
-  font-family: inherit;
-  /* 1 */
-  font-size: 100%;
-  /* 1 */
-  line-height: 1.15;
-  /* 1 */
-  margin: 0;
-  /* 2 */
+  font-family: inherit; /* 1 */
+  font-size: 100%; /* 1 */
+  line-height: 1.15; /* 1 */
+  margin: 0; /* 2 */
 }
 
 /**
@@ -190,8 +174,7 @@ textarea {
  */
 
 button,
-input {
-  /* 1 */
+input { /* 1 */
   overflow: visible;
 }
 
@@ -201,8 +184,7 @@ input {
  */
 
 button,
-select {
-  /* 1 */
+select { /* 1 */
   text-transform: none;
 }
 
@@ -256,18 +238,12 @@ fieldset {
  */
 
 legend {
-  box-sizing: border-box;
-  /* 1 */
-  color: inherit;
-  /* 2 */
-  display: table;
-  /* 1 */
-  max-width: 100%;
-  /* 1 */
-  padding: 0;
-  /* 3 */
-  white-space: normal;
-  /* 1 */
+  box-sizing: border-box; /* 1 */
+  color: inherit; /* 2 */
+  display: table; /* 1 */
+  max-width: 100%; /* 1 */
+  padding: 0; /* 3 */
+  white-space: normal; /* 1 */
 }
 
 /**
@@ -293,10 +269,8 @@ textarea {
 
 [type="checkbox"],
 [type="radio"] {
-  box-sizing: border-box;
-  /* 1 */
-  padding: 0;
-  /* 2 */
+  box-sizing: border-box; /* 1 */
+  padding: 0; /* 2 */
 }
 
 /**
@@ -314,10 +288,8 @@ textarea {
  */
 
 [type="search"] {
-  -webkit-appearance: textfield;
-  /* 1 */
-  outline-offset: -2px;
-  /* 2 */
+  -webkit-appearance: textfield; /* 1 */
+  outline-offset: -2px; /* 2 */
 }
 
 /**
@@ -334,10 +306,8 @@ textarea {
  */
 
 ::-webkit-file-upload-button {
-  -webkit-appearance: button;
-  /* 1 */
-  font: inherit;
-  /* 2 */
+  -webkit-appearance: button; /* 1 */
+  font: inherit; /* 2 */
 }
 
 /* Interactive
@@ -381,102 +351,38 @@ template {
 /*
 * Parte mía.
 */
-#main {
+#main{
   display: table;
 }
-
-#row {
+#row{
   display: table-row;
 }
-
-#main .td {
+#main .td{
   display: table-cell;
 }
-
 /*
 * Añadir #row solventa que el iframe se vea apretado, pero hace que el nav este en el fondo.
 */
-html,
-body,
-main,
-iframe,
-#row {
-  height: 100%;
-  width: 100%;
-}
-
+html,body,main,iframe,#row{ height: 100%; width: 100%; }
 /*
 * No se porqué el primer item no se alinea.
 */
-html {
+html{
   background-color: #CCCC66;
 }
-
-ul#navList {
+ul#navList{
   list-style-type: none;
   margin-left: 10%;
 }
 
-nav {
+nav{
   width: 5%;
 }
-
-#youtube iframe{
-  border: 0;
-}
-
-#marcoprincipal {
+#marcoprincipal{
   width: 100%;
   height: 100%;
 }
-
-.bold {
+.bold{
   font-weight: bold;
   color: brown;
-}
-
-#glbd-load {
-  width: 600px;
-  height: 400px;
-  background: url(http://globedia.com/img/loading.gif) center no-repeat;
-}
-
-#glbd-link {
-  text-align: right;
-  font-size: 10px;
-  font-family: 'Trebuchet MS', Arial;
-  margin: auto;
-  width: 600px;
-}
-
-#glbd-link a {
-  color: #999;
-  text-decoration: none;
-}
-
-#calendar iframe {
-  border: 0;
-  width: 800;
-  height: 600;
-  overflow: hidden;
-}
-
-#stock iframe {
-  border: unset;
-  width: 100%;
-}
-
-#fx-pricing-widget-copyright {
-  text-align: center;
-  font-size: 13px;
-  font-family: sans-serif;
-  margin-top: 10px;
-  margin-bottom: 10px;
-  color: #9db2bd;
-}
-
-#fx-pricing-widget-copyright a {
-  text-decoration: unset;
-  color: #bb3534;
-  font-weight: 600;
 }
